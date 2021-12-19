@@ -9,31 +9,31 @@ const NavBar = () => {
             {
                 id: 1,
                 name: "Home",
-                to: "/#home",
+                to: "/portfolio-convert/#home",
                 className: "nav__link",
             },
             {
                 id: 2,
                 name: "About",
-                to: "/#about",
+                to: "/portfolio-convert/#about",
                 className: "nav__link",
             },
             {
                 id: 3,
                 name: "Skills",
-                to: "/#skills",
+                to: "/portfolio-convert/#skills",
                 className: "nav__link",
             },
             {
                 id: 4,
                 name: "Work",
-                to: "/#work",
+                to: "/portfolio-convert/#work",
                 className: "nav__link",
             },
             {
                 id: 5,
                 name: "Contact",
-                to: "/#contact",
+                to: "/portfolio-convert/#contact",
                 className: "nav__link",
             }
         ]
@@ -54,7 +54,7 @@ const NavBar = () => {
             <header className="l-header">
                 <nav className="nav bd-grid">
                     <div>
-                        <a href="/" className="nav__logo">QuyTran / <span className='strong'>FE Developer</span></a>
+                        <a href="/portfolio-convert/" className="nav__logo">QuyTran / <span className='strong'>FE Developer</span></a>
                     </div>
 
                     <div 
