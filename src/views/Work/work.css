@@ -1,0 +1,24 @@
+/* ===== WORK =====*/
+.work__container {
+  row-gap: 2rem;
+}
+.work__img {
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.work__img img {
+  transition: 1s;
+  cursor: pointer;
+}
+.work__img img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}

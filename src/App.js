@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer/Footer';
+import About from './views/About/About';
+import Contact from './views/Contact/Contact';
+import Home from './views/Home/Home';
+import Skills from './views/Skills/Skills';
+import Work from './views/Work/Work';
+import NavBar from './components/NavBar/NavBar'
+import ScrollReveal from './ultis/ScrollReveal';
+import GoToTop from './components/GoToTop/GoToTop';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <main className="l-main">
+        <ScrollReveal>
+          <Home />
+        </ScrollReveal>
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Skills />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Work />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
+      </main>
+      <GoToTop />
+      <Footer />
     </div>
   );
 }

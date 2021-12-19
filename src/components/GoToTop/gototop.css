@@ -1,0 +1,25 @@
+.go__to__top {
+  opacity: 0;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d0d0d0;
+  transition: 0.5s linear;
+}
+.go__to__top.show {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.5s linear;
+}
+.go__to__top--icon {
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--first-color);
+}
