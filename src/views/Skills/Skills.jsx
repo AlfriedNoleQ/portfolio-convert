@@ -1,8 +1,18 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import './skills.css'
 import work3 from '../../assets/img/work3.jpg'
+import { sr } from '../../ultis/ScrollReveal';
 
 const Skills = () => {
+
+    useEffect(() => {
+        /*SCROLL SKILLS*/
+        sr.reveal('.skills__subtitle',{}); 
+        sr.reveal('.skills__text',{}); 
+        sr.reveal('.skills__data',{interval: 200}); 
+        sr.reveal('.skills__img',{delay: 600});
+    }, [])
+
     return (
         <>
             <section className="skills section" id="skills">

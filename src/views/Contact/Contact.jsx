@@ -1,9 +1,17 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import './contact.css'
+import { sr } from '../../ultis/ScrollReveal';
 
 const Contact = () => {
+
+    useEffect(() => {
+        /*SCROLL CONTACT*/
+        sr.reveal('.contact__input',{interval: 200}); 
+    }, [])
+
     return (
         <>
+        
             <section className="contact section" id="contact">
                 <h2 className="section-title">Contact</h2>
 

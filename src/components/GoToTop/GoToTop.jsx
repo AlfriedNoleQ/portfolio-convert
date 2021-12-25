@@ -34,7 +34,7 @@ const GoToTop = () => {
                 id="go__to__top" 
                 onClick={scrollToTop}
             >
-                <i class='bx bxs-up-arrow-alt go__to__top--icon'></i>
+                <i className='bx bxs-up-arrow-alt go__to__top--icon'></i>
             </div>
         </>
     )

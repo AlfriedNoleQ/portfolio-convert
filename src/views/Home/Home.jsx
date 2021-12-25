@@ -1,8 +1,18 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import './home.css'
 import perfil from '../../assets/img/perfil.jpg'
+import { sr } from '../../ultis/ScrollReveal';
 
 const Home = () => {
+    
+    useEffect(() => {
+        /*SCROLL HOME*/
+        sr.reveal('.home__title',{}); 
+        sr.reveal('.button',{delay: 200}); 
+        sr.reveal('.home__img',{delay: 400}); 
+        sr.reveal('.home__social-icon',{ interval: 200}); 
+    }, [])
+
     return (
         <>
             <section className="home bd-grid" id="home">
